@@ -11,7 +11,7 @@
                 'base',
                 ],
     'data': [
-        'view/smy_demo_views.xml'
+        'view/my_demo_views.xml'
     ],
 
     'demo': [''],
