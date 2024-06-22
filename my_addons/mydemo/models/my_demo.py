@@ -1,17 +1,12 @@
 import logging
-
 from odoo import models, fields
 
 _logger = logging.getLogger(__name__)
-class MyDemo(models.Model):
+
+class mydemo(models.Model):
     _name = 'my.demo'
-    _description = 'MyDemo'
+    _description = 'mydemo'
 
     name = fields.Char()
-
     active = fields.Boolean(default=True)
     
-
-
-
-

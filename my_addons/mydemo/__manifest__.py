@@ -1,31 +1,34 @@
 {
-    'name': 'mydemo',
-    'author': 'Dmitriy Chumak',
-    'website': 'http://www.dmitriy.chumak.com',
+    'name': 'My super demo module',
     'version': '17.0.0.0.1',
-    'summary': 'I want to learn odoo',
-    'description': 'this module is used to learn odoo',
+    'summary': 'This is a demo module',
+    'description': '',
+
     'category': 'Customization',
+    'author': 'Dmitriy Chumak',
+    'website': 'dmitriy.chumak.com',
+
     'license': 'OPL-1',
     'depends': [
-                'base',
-                ],
-    'data': [
-        'view/my_demo_views.xml'
+        'base',
     ],
+
+    'data': [
+        'security/ir.model.access.csv',
+        'views/my_demo_views.xml',
+        ],
 
     'demo': [''],
+
     'installable': True,
     'auto_install': False,
-    'application': False,
+    'application': True,
     'external_dependencies': {
-        'python': [''],
+
     },
 
-    'images': [
-        'static/description/icon.png'
-    ],
 
+    'images': ['static/description/icon.png'],
     'price': 0,
-    'currency': 'EUR',
+    'currency': 'EUR'
 }
