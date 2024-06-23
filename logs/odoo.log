@@ -1,195 +1,143 @@
-2024-06-23 10:55:41,557 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:41] "POST /web/webclient/version_info HTTP/1.1" 200 - 1 0.001 0.002
-2024-06-23 10:55:42,652 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:42] "GET /web?debug=1 HTTP/1.1" 200 - 59 0.026 0.356
-2024-06-23 10:55:43,015 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "POST /web/action/load HTTP/1.1" 200 - 10 0.012 0.080
-2024-06-23 10:55:43,027 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.021 0.080
-2024-06-23 10:55:43,297 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 6 0.009 0.013
-2024-06-23 10:55:43,345 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 41 0.023 0.031
-2024-06-23 10:55:43,362 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.003 0.003
-2024-06-23 10:55:43,385 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.003
-2024-06-23 10:55:43,720 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.056
-2024-06-23 10:55:43,745 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.017 0.065
-2024-06-23 10:55:43,797 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:43] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.008 0.124
-2024-06-23 10:55:44,354 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:44] "GET /web_theme_classic/static/description/icon.png HTTP/1.1" 404 - 2 0.001 0.003
-2024-06-23 10:55:45,355 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:45] "POST /web/action/load HTTP/1.1" 200 - 8 0.006 0.003
-2024-06-23 10:55:45,683 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:45] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.002 0.006
-2024-06-23 10:55:45,945 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:45] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.002 0.002
-2024-06-23 10:55:46,010 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:46] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
-2024-06-23 10:55:48,463 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:48] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 3 0.003 0.004
-2024-06-23 10:55:48,790 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
-2024-06-23 10:55:49,335 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:49] "POST /web/dataset/call_button HTTP/1.1" 200 - 1275 0.344 0.205
-2024-06-23 10:55:51,803 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:51] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 1 0.001 0.004
-2024-06-23 10:55:53,145 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:53] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 3 0.003 0.006
-2024-06-23 10:55:53,401 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
-2024-06-23 10:55:53,959 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:53] "POST /web/dataset/call_button HTTP/1.1" 200 - 1275 0.349 0.211
-2024-06-23 10:55:55,943 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 1.144
-2024-06-23 10:55:56,185 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:56] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 29 0.016 1.065
-2024-06-23 10:55:58,429 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:58] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.004
-2024-06-23 10:55:58,706 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:58] "POST /web/dataset/call_kw/base.import.module/get_views HTTP/1.1" 200 - 10 0.008 0.013
-2024-06-23 10:55:58,749 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:55:58] "POST /web/dataset/call_kw/base.import.module/onchange HTTP/1.1" 200 - 2 0.001 0.002
-2024-06-23 10:57:36,393 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:36] "POST /web/dataset/call_kw/base.import.module/web_save HTTP/1.1" 200 - 4 0.050 0.018
-2024-06-23 10:57:36,647 29088 INFO odoo_test odoo.addons.base_import_module.models.ir_module: module mydemo: loading security/ir.model.access.csv 
-2024-06-23 10:57:36,662 29088 INFO odoo_test odoo.addons.base_import_module.models.ir_module: module mydemo: loading views/my_demo_views.xml 
-2024-06-23 10:57:36,692 29088 INFO odoo_test odoo.addons.base_import_module.models.ir_module: module mydemo: loading demo/my_demo.xml 
-2024-06-23 10:57:37,062 29088 INFO odoo_test odoo.addons.base_import_module.models.ir_module: Successfully imported module 'mydemo' 
-2024-06-23 10:57:37,070 29088 INFO odoo_test odoo.modules.registry: Caches invalidated, signaling through the database: ['assets', 'default', 'templates'] 
-2024-06-23 10:57:37,071 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:37] "POST /web/dataset/call_button HTTP/1.1" 200 - 89 0.050 0.436
-2024-06-23 10:57:37,490 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:37] "GET /web HTTP/1.1" 200 - 61 0.026 0.380
-2024-06-23 10:57:37,848 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:37] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.003 0.007
-2024-06-23 10:57:38,185 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:38] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.010
-2024-06-23 10:57:38,187 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:38] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 6 0.006 0.007
-2024-06-23 10:57:38,227 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:38] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.005
-2024-06-23 10:57:38,481 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:38] "POST /web/dataset/call_kw/my.demo/get_views HTTP/1.1" 200 - 12 0.013 0.027
-2024-06-23 10:57:38,518 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:38] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 10:57:38,519 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:38] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 10:57:38,814 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:38] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.003 0.002
-2024-06-23 10:57:40,115 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:40] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
-2024-06-23 10:57:43,076 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:43] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
-2024-06-23 10:57:43,893 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:43] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 10:57:45,366 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:45] "POST /web/dataset/call_kw/my.demo/web_read HTTP/1.1" 200 - 2 0.001 0.002
-2024-06-23 10:57:49,002 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:49] "POST /web/dataset/call_kw/my.demo/onchange HTTP/1.1" 200 - 1 0.000 0.004
-2024-06-23 10:57:53,269 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:53] "POST /web/dataset/call_kw/my.demo/web_save HTTP/1.1" 200 - 3 0.000 0.005
-2024-06-23 10:57:54,386 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:54] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 10:57:58,509 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:57:58] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.000 0.004
-2024-06-23 10:58:01,300 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:01] "POST /web/action/load HTTP/1.1" 200 - 8 0.009 0.005
-2024-06-23 10:58:01,657 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:01] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 8 0.005 0.008
-2024-06-23 10:58:01,923 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:01] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 22 0.005 0.008
-2024-06-23 10:58:01,977 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:01] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 10:58:02,282 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:02] "POST /base_setup/data HTTP/1.1" 200 - 7 0.006 0.004
-2024-06-23 10:58:08,344 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:08] "POST /web/action/load HTTP/1.1" 200 - 9 0.005 0.004
-2024-06-23 10:58:08,712 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:08] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 40 0.012 0.030
-2024-06-23 10:58:08,942 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:08] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.002
-2024-06-23 10:58:09,064 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:09] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.014 0.013
-2024-06-23 10:58:09,094 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:09] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.056
-2024-06-23 10:58:09,349 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:09] "GET /web_theme_classic/static/description/icon.png HTTP/1.1" 404 - 2 0.003 0.005
-2024-06-23 10:58:10,619 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:10] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.015 0.012
-2024-06-23 10:58:10,665 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:10] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.069
-2024-06-23 10:58:10,850 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:10] "GET /web_theme_classic/static/description/icon.png HTTP/1.1" 404 - 2 0.001 0.003
-2024-06-23 10:58:11,129 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:11] "GET /web_responsive/static/description/icon.png HTTP/1.1" 404 - 2 0.001 0.002
-2024-06-23 10:58:17,119 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:17] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.022 0.015
-2024-06-23 10:58:17,455 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:17] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.009
-2024-06-23 10:58:20,308 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.button_uninstall_wizard on ['My super demo module'] to user __system__ #1 via 127.0.0.1 
-2024-06-23 10:58:20,309 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:20] "POST /web/dataset/call_button HTTP/1.1" 200 - 3 0.001 0.005
-2024-06-23 10:58:20,658 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:20] "POST /web/dataset/call_kw/base.module.uninstall/get_views HTTP/1.1" 200 - 9 0.008 0.005
-2024-06-23 10:58:20,920 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:20] "POST /web/dataset/call_kw/base.module.uninstall/onchange HTTP/1.1" 200 - 10 0.007 0.005
-2024-06-23 10:58:23,797 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:23] "POST /web/dataset/call_kw/ir.model/get_views HTTP/1.1" 200 - 32 0.009 0.024
-2024-06-23 10:58:24,174 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:24] "POST /web/dataset/call_kw/ir.model/web_read HTTP/1.1" 200 - 21 0.043 0.009
-2024-06-23 10:58:35,066 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:35] "POST /web/dataset/call_kw/base.module.uninstall/onchange HTTP/1.1" 200 - 24 0.007 0.017
-2024-06-23 10:58:39,655 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:39] "POST /web/dataset/call_kw/base.module.uninstall/web_save HTTP/1.1" 200 - 18 0.012 0.007
-2024-06-23 10:58:39,908 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_uninstall on ['My super demo module'] to user __system__ #1 via 127.0.0.1 
-2024-06-23 10:58:39,908 29088 INFO odoo_test odoo.addons.base.models.ir_module: User #1 triggered module uninstallation 
-2024-06-23 10:58:39,909 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.button_uninstall on ['My super demo module'] to user __system__ #1 via 127.0.0.1 
-2024-06-23 10:58:39,923 29088 INFO odoo_test odoo.modules.loading: loading 1 modules... 
-2024-06-23 10:58:39,928 29088 INFO odoo_test odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
-2024-06-23 10:58:39,943 29088 INFO odoo_test odoo.modules.loading: updating modules list 
-2024-06-23 10:58:39,943 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
-2024-06-23 10:58:40,510 29088 INFO odoo_test odoo.modules.loading: loading 13 modules... 
-2024-06-23 10:58:40,515 29088 INFO odoo_test odoo.modules.loading: 13 modules loaded in 0.00s, 0 queries (+0 extra) 
-2024-06-23 10:58:40,554 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.module_uninstall on ['My super demo module'] to user __system__ #1 via 127.0.0.1 
-2024-06-23 10:58:40,557 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting ir.attachment(206, 205, 204) 
-2024-06-23 10:58:40,572 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [7110, 7111, 7112] 
-2024-06-23 10:58:40,572 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [206, 205, 204] 
-2024-06-23 10:58:40,573 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting my.demo(2,) 
-2024-06-23 10:58:40,580 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [7109] 
-2024-06-23 10:58:40,580 29088 INFO odoo_test odoo.models.unlink: User #1 deleted my.demo records with IDs: [2] 
-2024-06-23 10:58:40,580 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting ir.ui.menu(71,) 
-2024-06-23 10:58:40,589 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [6967] 
-2024-06-23 10:58:40,590 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [71] 
-2024-06-23 10:58:40,590 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting ir.model.access(160,) 
-2024-06-23 10:58:40,597 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [6948] 
-2024-06-23 10:58:40,597 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [160] 
-2024-06-23 10:58:40,598 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting ir.ui.menu(70,) 
-2024-06-23 10:58:40,605 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [6912] 
-2024-06-23 10:58:40,605 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [70] 
-2024-06-23 10:58:40,606 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting ir.actions.act_window(88,) 
-2024-06-23 10:58:40,621 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [6911] 
-2024-06-23 10:58:40,621 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [88] 
-2024-06-23 10:58:40,622 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting ir.ui.view(243, 242) 
-2024-06-23 10:58:40,637 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [6910, 6909] 
-2024-06-23 10:58:40,637 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [243, 242] 
-2024-06-23 10:58:40,642 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting ir.model.fields(1557, 1555, 1554) 
-2024-06-23 10:58:40,691 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [6902, 6904, 6901] 
-2024-06-23 10:58:40,691 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1557, 1555, 1554] 
-2024-06-23 10:58:40,697 29088 INFO odoo_test odoo.addons.base.models.ir_model: Deleting ir.model(137,) 
-2024-06-23 10:58:40,725 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [6900] 
-2024-06-23 10:58:40,725 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model records with IDs: [137] 
-2024-06-23 10:58:40,725 29088 INFO odoo_test odoo.addons.base.models.ir_model: ir.model.data could not be deleted ([]) 
-2024-06-23 10:58:40,728 29088 INFO odoo_test odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [7112, 7111, 7110, 7109, 6967, 6948, 6912, 6911, 6910, 6909, 6908, 6907, 6906, 6905, 6904, 6903, 6902, 6901, 6900] 
-2024-06-23 10:58:40,735 29088 INFO odoo_test odoo.modules.loading: Reloading registry once more after uninstalling modules 
-2024-06-23 10:58:40,746 29088 INFO odoo_test odoo.modules.loading: loading 1 modules... 
-2024-06-23 10:58:40,787 29088 INFO odoo_test odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
-2024-06-23 10:58:40,801 29088 INFO odoo_test odoo.modules.loading: updating modules list 
-2024-06-23 10:58:40,803 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
-2024-06-23 10:58:41,377 29088 INFO odoo_test odoo.modules.loading: loading 12 modules... 
-2024-06-23 10:58:41,382 29088 INFO odoo_test odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
-2024-06-23 10:58:41,618 29088 INFO odoo_test odoo.modules.loading: Modules loaded. 
-2024-06-23 10:58:41,621 29088 INFO odoo_test odoo.modules.registry: Registry loaded in 0.885s 
-2024-06-23 10:58:41,623 29088 INFO odoo_test odoo.modules.registry: Registry loaded in 1.709s 
-2024-06-23 10:58:41,623 29088 INFO odoo_test odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
-2024-06-23 10:58:41,624 29088 INFO odoo_test odoo.modules.registry: Registry changed, signaling through the database 
-2024-06-23 10:58:41,625 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:41] "POST /web/dataset/call_button HTTP/1.1" 200 - 3085 1.062 0.660
-2024-06-23 10:58:41,646 29088 INFO odoo_test odoo.addons.base.models.ir_http: Generating routing map for key None 
-2024-06-23 10:58:42,030 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:42] "GET /web HTTP/1.1" 200 - 62 0.031 0.356
-2024-06-23 10:58:42,253 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:42] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.003 0.007
-2024-06-23 10:58:42,601 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:42] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 6 0.004 0.006
-2024-06-23 10:58:42,603 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:42] "POST /web/action/load HTTP/1.1" 200 - 10 0.006 0.006
-2024-06-23 10:58:42,611 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:42] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.007
-2024-06-23 10:58:42,615 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:42] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.005 0.005
-2024-06-23 10:58:42,898 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:42] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 41 0.020 0.018
-2024-06-23 10:58:42,940 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:42] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.002
-2024-06-23 10:58:43,273 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:43] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.024 0.025
-2024-06-23 10:58:43,303 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:43] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.076
-2024-06-23 10:58:43,695 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:43] "GET /web_theme_classic/static/description/icon.png HTTP/1.1" 404 - 2 0.004 0.004
-2024-06-23 10:58:44,946 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:44] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.017 0.008
-2024-06-23 10:58:44,995 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:44] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.056
-2024-06-23 10:58:45,193 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:45] "GET /web_theme_classic/static/description/icon.png HTTP/1.1" 404 - 2 0.002 0.001
-2024-06-23 10:58:45,460 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:45] "GET /web_responsive/static/description/icon.png HTTP/1.1" 404 - 2 0.002 0.001
-2024-06-23 10:58:45,491 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:45] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
-2024-06-23 10:58:47,820 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.019 0.017
-2024-06-23 10:58:48,045 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:48] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.006
-2024-06-23 10:58:53,328 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:53] "POST /web/dataset/call_button HTTP/1.1" 200 - 1 0.000 0.002
-2024-06-23 10:58:53,676 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:53] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 6 0.005 0.015
-2024-06-23 10:58:53,919 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:53] "POST /web/dataset/call_kw/ir.module.module/web_read HTTP/1.1" 200 - 10 0.004 0.009
-2024-06-23 10:58:54,073 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:54] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=en_US&debug=1 HTTP/1.1" 200 - 7 0.001 0.073
-2024-06-23 10:58:54,258 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 10:58:54] "GET /web/image?model=ir.module.module&id=593&field=icon_image&unique=1719140319000 HTTP/1.1" 200 - 3 0.003 0.006
-2024-06-23 11:02:07,662 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['My super demo module'] to user __system__ #1 via 127.0.0.1 
-2024-06-23 11:02:07,662 29088 INFO odoo_test odoo.addons.base.models.ir_module: User #1 triggered module installation 
-2024-06-23 11:02:07,663 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['My super demo module'] to user __system__ #1 via 127.0.0.1 
-2024-06-23 11:02:07,727 29088 INFO odoo_test odoo.modules.loading: loading 1 modules... 
-2024-06-23 11:02:07,732 29088 INFO odoo_test odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
-2024-06-23 11:02:07,746 29088 INFO odoo_test odoo.modules.loading: updating modules list 
-2024-06-23 11:02:07,747 29088 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
-2024-06-23 11:02:08,292 29088 INFO odoo_test odoo.modules.loading: loading 12 modules... 
-2024-06-23 11:02:08,297 29088 INFO odoo_test odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
-2024-06-23 11:02:08,298 29088 INFO odoo_test odoo.modules.loading: loading 13 modules... 
-2024-06-23 11:02:08,298 29088 INFO odoo_test odoo.modules.loading: Loading module mydemo (2/13) 
-2024-06-23 11:02:08,319 29088 INFO odoo_test odoo.modules.registry: module mydemo: creating or updating database tables 
-2024-06-23 11:02:08,381 29088 INFO odoo_test odoo.modules.loading: loading mydemo/security/ir.model.access.csv 
-2024-06-23 11:02:08,393 29088 INFO odoo_test odoo.modules.loading: loading mydemo/views/my_demo_views.xml 
-2024-06-23 11:02:08,420 29088 INFO odoo_test odoo.modules.loading: Module mydemo: loading demo 
-2024-06-23 11:02:08,420 29088 INFO odoo_test odoo.modules.loading: loading mydemo/demo/my_demo.xml 
-2024-06-23 11:02:08,448 29088 INFO odoo_test odoo.modules.loading: Module mydemo loaded in 0.15s, 92 queries (+92 other) 
-2024-06-23 11:02:08,448 29088 INFO odoo_test odoo.modules.loading: 13 modules loaded in 0.15s, 92 queries (+92 extra) 
-2024-06-23 11:02:08,710 29088 INFO odoo_test odoo.modules.loading: Modules loaded. 
-2024-06-23 11:02:08,713 29088 INFO odoo_test odoo.modules.registry: Registry loaded in 0.993s 
-2024-06-23 11:02:08,713 29088 INFO odoo_test odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
-2024-06-23 11:02:08,715 29088 INFO odoo_test odoo.modules.registry: Registry changed, signaling through the database 
-2024-06-23 11:02:08,715 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:08] "POST /web/dataset/call_button HTTP/1.1" 200 - 1811 0.654 0.404
-2024-06-23 11:02:08,732 29088 INFO odoo_test odoo.addons.base.models.ir_http: Generating routing map for key None 
-2024-06-23 11:02:09,091 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:09] "GET /web HTTP/1.1" 200 - 62 0.024 0.337
-2024-06-23 11:02:09,198 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:09] "GET /web/webclient/load_menus/65ab68196a248d44a0c97b56ea349ffe950fb5d8b8d01fa37b3ba136f73e95b5 HTTP/1.1" 200 - 2 0.002 0.002
-2024-06-23 11:02:09,682 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:09] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.006
-2024-06-23 11:02:09,697 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:09] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.002 0.006
-2024-06-23 11:02:09,722 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:09] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 6 0.002 0.032
-2024-06-23 11:02:09,971 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:09] "POST /web/dataset/call_kw/my.demo/get_views HTTP/1.1" 200 - 12 0.011 0.020
-2024-06-23 11:02:10,019 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:10] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 11:02:10,035 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:10] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
-2024-06-23 11:02:10,041 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:10] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.002
-2024-06-23 11:02:10,289 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:10] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.000 0.004
-2024-06-23 11:02:11,640 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:11] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
-2024-06-23 11:02:16,105 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:16] "POST /web/dataset/call_kw/my.demo/web_read HTTP/1.1" 200 - 2 0.001 0.002
-2024-06-23 11:02:18,188 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:18] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 11:02:25,251 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:25] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 11:02:26,475 29088 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:02:26] "POST /web/dataset/call_kw/my.demo/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
-2024-06-23 11:02:29,830 29088 INFO odoo_test odoo.service.server: Initiating shutdown 
-2024-06-23 11:02:29,830 29088 INFO odoo_test odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
-2024-06-23 11:02:30,169 29088 INFO odoo_test odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-06-23 11:41:19,571 30384 INFO ? odoo: Odoo version 17.0 
+2024-06-23 11:41:19,571 30384 INFO ? odoo: Using configuration file at D:\Study\learning_odoo\conf\odoo.conf 
+2024-06-23 11:41:19,571 30384 INFO ? odoo: addons paths: ['D:\\Study\\learning_odoo\\odoo\\addons', 'd:\\study\\learning_odoo\\data\\addons\\17.0', 'd:\\study\\learning_odoo\\addons', 'd:\\study\\learning_odoo\\custom_addons', 'd:\\study\\learning_odoo\\odoo\\addons', 'd:\\study\\learning_odoo\\my_addons'] 
+2024-06-23 11:41:19,571 30384 INFO ? odoo: database: odoo_admin@localhost:5432 
+2024-06-23 11:41:19,809 30384 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-06-23 11:41:20,120 30384 INFO odoo_test odoo.modules.loading: loading 1 modules... 
+2024-06-23 11:41:20,153 30384 INFO odoo_test odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2024-06-23 11:41:20,173 30384 INFO odoo_test odoo.modules.loading: loading 13 modules... 
+2024-06-23 11:41:20,314 30384 INFO odoo_test odoo.modules.loading: 13 modules loaded in 0.14s, 0 queries (+0 extra) 
+2024-06-23 11:41:20,340 30384 INFO odoo_test odoo.modules.loading: Modules loaded. 
+2024-06-23 11:41:20,344 30384 INFO odoo_test odoo.modules.registry: Registry loaded in 0.294s 
+2024-06-23 11:41:20,891 30384 INFO ? odoo.service.server: HTTP service (werkzeug) running on Dmitriy-PC:8069 
+2024-06-23 11:41:22,896 30384 INFO odoo_test odoo.service.server: Initiating shutdown 
+2024-06-23 11:41:22,896 30384 INFO odoo_test odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-23 11:41:22,935 30384 INFO odoo_test odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 3 connections  
+2024-06-23 11:41:51,927 25056 INFO ? odoo: Odoo version 17.0 
+2024-06-23 11:41:51,927 25056 INFO ? odoo: Using configuration file at D:\Study\learning_odoo\conf\odoo.conf 
+2024-06-23 11:41:51,927 25056 INFO ? odoo: addons paths: ['D:\\Study\\learning_odoo\\odoo\\addons', 'd:\\study\\learning_odoo\\data\\addons\\17.0', 'd:\\study\\learning_odoo\\addons', 'd:\\study\\learning_odoo\\custom_addons', 'd:\\study\\learning_odoo\\odoo\\addons', 'd:\\study\\learning_odoo\\my_addons'] 
+2024-06-23 11:41:51,927 25056 INFO ? odoo: database: odoo_admin@localhost:5432 
+2024-06-23 11:41:52,173 25056 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-06-23 11:41:52,468 25056 INFO odoo_test odoo.modules.loading: loading 1 modules... 
+2024-06-23 11:41:52,500 25056 INFO odoo_test odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2024-06-23 11:41:52,516 25056 INFO odoo_test odoo.modules.loading: updating modules list 
+2024-06-23 11:41:52,518 25056 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2024-06-23 11:41:53,256 25056 INFO ? odoo.service.server: HTTP service (werkzeug) running on Dmitriy-PC:8069 
+2024-06-23 11:41:54,073 25056 INFO odoo_test odoo.modules.loading: loading 13 modules... 
+2024-06-23 11:41:54,239 25056 INFO odoo_test odoo.modules.loading: 13 modules loaded in 0.17s, 0 queries (+0 extra) 
+2024-06-23 11:41:54,517 25056 INFO odoo_test odoo.modules.loading: Modules loaded. 
+2024-06-23 11:41:54,520 25056 INFO odoo_test odoo.modules.registry: Registry loaded in 2.116s 
+2024-06-23 11:41:54,627 25056 INFO odoo_test odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-23 11:41:54,650 25056 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['Hospital management '] to user __system__ #1 via 127.0.0.1 
+2024-06-23 11:41:54,650 25056 INFO odoo_test odoo.addons.base.models.ir_module: User #1 triggered module installation 
+2024-06-23 11:41:54,653 25056 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Hospital management '] to user __system__ #1 via 127.0.0.1 
+2024-06-23 11:41:54,746 25056 INFO odoo_test odoo.modules.loading: loading 1 modules... 
+2024-06-23 11:41:54,751 25056 INFO odoo_test odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-23 11:41:54,765 25056 INFO odoo_test odoo.modules.loading: updating modules list 
+2024-06-23 11:41:54,767 25056 INFO odoo_test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2024-06-23 11:41:55,301 25056 INFO odoo_test odoo.modules.loading: loading 13 modules... 
+2024-06-23 11:41:55,307 25056 INFO odoo_test odoo.modules.loading: 13 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-23 11:41:55,308 25056 INFO odoo_test odoo.modules.loading: loading 14 modules... 
+2024-06-23 11:41:55,308 25056 INFO odoo_test odoo.modules.loading: Loading module hr_hospital (2/14) 
+2024-06-23 11:41:55,370 25056 INFO odoo_test odoo.modules.loading: loading hr_hospital/ 
+2024-06-23 11:41:55,373 25056 WARNING odoo_test odoo.modules.loading: Transient module states were reset 
+2024-06-23 11:41:55,374 25056 ERROR odoo_test odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "D:\Study\learning_odoo\odoo\modules\registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "D:\Study\learning_odoo\odoo\modules\loading.py", line 480, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\modules\loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "D:\Study\learning_odoo\odoo\modules\loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "D:\Study\learning_odoo\odoo\tools\convert.py", line 621, in convert_file
+    with file_open(pathname, 'rb') as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\tools\misc.py", line 221, in file_open
+    raise FileNotFoundError("Not a file: " + name)
+FileNotFoundError: Not a file: hr_hospital\
+2024-06-23 11:41:55,382 25056 INFO odoo_test odoo.modules.loading: loading 1 modules... 
+2024-06-23 11:41:55,387 25056 INFO odoo_test odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-23 11:41:55,388 25056 INFO odoo_test odoo.modules.loading: loading 13 modules... 
+2024-06-23 11:41:55,393 25056 INFO odoo_test odoo.modules.loading: 13 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-23 11:41:55,412 25056 INFO odoo_test odoo.modules.loading: Modules loaded. 
+2024-06-23 11:41:55,414 25056 INFO odoo_test odoo.modules.registry: Registry loaded in 0.037s 
+2024-06-23 11:41:55,419 25056 ERROR odoo_test odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "D:\Study\learning_odoo\odoo\http.py", line 2173, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\http.py", line 1748, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\service\model.py", line 133, in retrying
+    result = func()
+             ^^^^^^
+  File "D:\Study\learning_odoo\odoo\http.py", line 1775, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\http.py", line 1979, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\addons\base\models\ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\study\learning_odoo\addons\web\controllers\dataset.py", line 28, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\study\learning_odoo\addons\web\controllers\dataset.py", line 20, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\api.py", line 468, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-77>", line 2, in button_immediate_install
+  File "D:\Study\learning_odoo\odoo\addons\base\models\ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\addons\base\models\ir_module.py", line 466, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\addons\base\models\ir_module.py", line 590, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-16>", line 2, in new
+  File "D:\Study\learning_odoo\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\modules\registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "D:\Study\learning_odoo\odoo\modules\loading.py", line 480, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\modules\loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "D:\Study\learning_odoo\odoo\modules\loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "D:\Study\learning_odoo\odoo\tools\convert.py", line 621, in convert_file
+    with file_open(pathname, 'rb') as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\learning_odoo\odoo\tools\misc.py", line 221, in file_open
+    raise FileNotFoundError("Not a file: " + name)
+FileNotFoundError: Not a file: hr_hospital\
+2024-06-23 11:41:55,422 25056 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:41:55] "POST /web/dataset/call_button HTTP/1.1" 200 - 1336 0.365 0.691
+2024-06-23 11:42:05,459 25056 INFO odoo_test odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-23 11:42:05,472 25056 INFO odoo_test werkzeug: 127.0.0.1 - - [23/Jun/2024 11:42:05] "GET /websocket HTTP/1.1" 101 - 6 0.002 0.014
+2024-06-23 11:42:05,478 25056 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-23 11:42:39,537 25056 INFO odoo_test odoo.service.server: Initiating shutdown 
+2024-06-23 11:42:39,537 25056 INFO odoo_test odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-23 11:42:40,139 25056 INFO odoo_test odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
