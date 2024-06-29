@@ -1,0 +1,34 @@
+
+<odoo>
+    <data>
+        <menuitem id="hr_hospital.menu_root" name="Hospital" sequence="10"/>
+
+        <menuitem
+            id="hr_hospital.menu_patient"
+            name="Patients"
+            parent="hr_hospital.menu_root"
+            action="hr_hospital.action_patient"
+            sequence="20"/>
+
+        <menuitem
+            id="hr_hospital.menu_doctor"
+            name="Doctors"
+            parent="hr_hospital.menu_root"
+            action="hr_hospital.action_doctor"
+            sequence="30"/>
+
+        <menuitem
+            id="hr_hospital.menu_disease"
+            name="Diseases"
+            parent="hr_hospital.menu_root"
+            action="hr_hospital.action_disease"
+            sequence="40"/>
+
+        <menuitem
+            id="hr_hospital.menu_visit"
+            name="Visits"
+            parent="hr_hospital.menu_root"
+            action="hr_hospital.action_visit"
+            sequence="50"/>
+    </data>
+</odoo>

@@ -1,12 +1,32 @@
+
 <odoo>
-    <record id="view_form_disease" model="ir.ui.view">
-        <field name="name">disease.form</field>
+
+    <record id="hr_hospital.action_disease" model="ir.actions.act_window">
+        <field name="name">Diseases</field>
+        <field name="res_model">hr_hospital.disease</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="hr_hospital_disease_view_tree" model="ir.ui.view">
+        <field name="name">hr_hospital.disease.tree</field>
+        <field name="model">hr_hospital.disease</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_hospital_disease_view_form" model="ir.ui.view">
+        <field name="name">hr_hospital.disease.form</field>
         <field name="model">hr_hospital.disease</field>
         <field name="arch" type="xml">
             <form string="Disease">
                 <sheet>
                     <group>
                         <field name="name"/>
+                        <field name="code"/>
                         <field name="description"/>
                     </group>
                 </sheet>
@@ -14,20 +34,4 @@
         </field>
     </record>
 
-    <record id="view_tree_disease" model="ir.ui.view">
-        <field name="name">disease.tree</field>
-        <field name="model">hr_hospital.disease</field>
-        <field name="arch" type="xml">
-            <tree string="Disease">
-                <field name="name"/>
-                <field name="description"/>
-            </tree>
-        </field>
-    </record>
-
-    <record id="hr_hospital.action_disease" model="ir.actions.act_window">
-        <field name="name">Diseases</field>
-        <field name="res_model">hr_hospital.disease</field>
-        <field name="view_mode">tree,form</field>
-    </record>
 </odoo>
