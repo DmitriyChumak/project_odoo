@@ -1,3 +1,5 @@
+# doctor model
+
 from odoo import models, fields
 
 class Doctor(models.Model):
@@ -6,4 +8,9 @@ class Doctor(models.Model):
 
     name = fields.Char(string='Name', required=True)
     specialization = fields.Char(string='Specialization')
-    patient_ids = fields.One2many('hr_hospital.patient', 'doctor_id', string='Patients')
+    phone = fields.Char(string='Phone')
+    email = fields.Char(string='Email')
+    gender = fields.Selection([
+        ('male', 'Male'),
+        ('female', 'Female'),
+    ], string='Gender')
