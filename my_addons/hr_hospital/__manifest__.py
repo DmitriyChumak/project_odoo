@@ -1,39 +1,26 @@
+# __manifest__.py
 {
-    'name': 'Hospital management ',
-    'version': '17.0.0.0.1',
-    'summary': 'This is module should help hospital management',
-
-    'category': 'Healthcare',
-    'author': 'Dmitriy Chumak',
-    'license': 'AGPL-3',
-
+    'name': 'Hospital Management',
+    'version': '1.0',
+    'summary': 'Module for managing hospital operations',
+    'author': 'Your Name',
+    'website': 'http://www.example.com',
+    'category': 'Human Resources',
     'depends': ['base'],
-
     'data': [
-        'security/security.xml',
         'security/ir.model.access.csv',
+        'security/security.xml',
         'views/doctor_views.xml',
         'views/patient_views.xml',
         'views/disease_views.xml',
         'views/visit_views.xml',
-        'views/hr_hospital_menu.xml',
-        'data/master_data.xml',
+        'views/hospital_menu.xml',
+        'data/hr_hospital_data.xml'
     ],
 
     'demo': [
-        'demo/demo_data.xml',
+        'demo/hr_hospital_demo.xml',
     ],
-
-    'external_dependencies': {
-
-    },
-
     'installable': True,
-    'auto_install': False,
     'application': True,
-
-
-
-    'price': 0,
-    'currency': 'EUR',
 }

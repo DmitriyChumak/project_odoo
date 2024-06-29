@@ -1,3 +1,5 @@
+# patient model
+
 from odoo import models, fields
 
 class Patient(models.Model):
@@ -5,7 +7,12 @@ class Patient(models.Model):
     _description = 'Patient'
 
     name = fields.Char(string='Name', required=True)
-    age = fields.Integer(string='Age')
-    disease_id = fields.Many2one('hr_hospital.disease', string='Disease')
-    doctor_id = fields.Many2one('hr_hospital.doctor', string='Doctor')
-    visit_ids = fields.One2many('hr_hospital.visit', 'patient_id', string='Visits')
+    date_of_birth = fields.Date(string='Date of Birth')
+    gender = fields.Selection([
+        ('male', 'Male'),
+        ('female', 'Female'),
+        ('other', 'Other')
+    ], string='Gender')
+    phone = fields.Char(string='Phone')
+    email = fields.Char(string='Email')
+    address = fields.Text(string='Address')
