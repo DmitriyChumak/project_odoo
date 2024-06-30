@@ -1,3 +1,5 @@
+# person model
+
 from odoo import models, fields
 
 class Person(models.AbstractModel):

@@ -12,10 +12,8 @@
         <field name="model">hr_hospital.visit</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="patient_id"/>
-                <field name="doctor_id"/>
-                <field name="disease_id"/>
-                <field name="date"/>
+                <field name="patient_id" widget="many2one_list"/>
+                <field name="doctor_id" widget="many2one_list"/>
             </tree>
         </field>
     </record>
@@ -27,10 +25,8 @@
             <form string="Visit">
                 <sheet>
                     <group>
-                        <field name="patient_id"/>
-                        <field name="doctor_id"/>
-                        <field name="disease_id"/>
-                        <field name="date"/>
+                        <field name="patient_id" widget="many2one_list"/>
+                        <field name="doctor_id" widget="many2one_list"/>
                         <field name="symptoms"/>
                         <field name="notes"/>
                     </group>

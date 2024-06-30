@@ -1,6 +1,6 @@
 # doctor model
 
-from odoo import models, fields
+from odoo import models, fields, api
 from . import person
 
 class Doctor(models.Model):
@@ -8,7 +8,8 @@ class Doctor(models.Model):
     _inherit = 'hr_hospital.person'
     _description = 'Doctor'
 
-    specialization = fields.Char(string='Specialization')
+    specialization_id = fields.Many2one('hr_hospital.specialization', string='Specialization')
+    is_intern = fields.Boolean(string='Intern', default=False)
 
     def name_get(self):
         result = []
@@ -17,3 +18,8 @@ class Doctor(models.Model):
             result.append((rec.id, name))
         return result
 
+    mentor_id = fields.Many2one(
+        'hr_hospital.doctor',
+        string='Mentor',
+        domain="[('is_intern', '=', False)]",
+    )

@@ -1,6 +1,5 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-
     <record id="hr_hospital.action_doctor" model="ir.actions.act_window">
         <field name="name">Doctors</field>
         <field name="res_model">hr_hospital.doctor</field>
@@ -12,12 +11,10 @@
         <field name="model">hr_hospital.doctor</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="first_name"/>
                 <field name="last_name"/>
-                <field name="date_of_birth"/>
+                <field name="first_name"/>
                 <field name="phone"/>
-                <field name="address"/>
-                <field name="specialization"/>
+                <field name="email"/>
             </tree>
         </field>
     </record>
@@ -29,16 +26,27 @@
             <form string="Doctor">
                 <sheet>
                     <group>
-                        <field name="first_name"/>
                         <field name="last_name"/>
-                        <field name="date_of_birth"/>
+                        <field name="first_name"/>
                         <field name="phone"/>
-                        <field name="address"/>
-                        <field name="specialization"/>
+                        <field name="email"/>
+                        <field name="specialization_id" widget="many2one_list"/>
+                        <field name="is_intern"/>
+                        <field name="mentor_id" invisible="not is_intern"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
 
+    <report
+        id="action_hr_hospital_disease_report"
+        model="hr_hospital.disease.report.wizard"
+        string="Disease Report"
+        report_type="qweb-pdf"
+        name="hr_hospital.disease_report"
+        file="hr_hospital.disease_report"
+    />
+
 </odoo>
+
