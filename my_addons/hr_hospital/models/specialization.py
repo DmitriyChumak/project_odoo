@@ -5,3 +5,4 @@ class Specialization(models.Model):
     _description = 'Specialization'
 
     name = fields.Char(string='Name', required=True)
+    description = fields.Text(string='Description')

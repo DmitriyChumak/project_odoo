@@ -1,13 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <menuitem id="hr_hospital.menu_root" name="Hospital" sequence="10"/>
-        <menuitem id="hr_hospital.menu_patient" name="Patients" parent="hr_hospital.menu_root" action="hr_hospital.action_patient" sequence="20"/>
-        <menuitem id="hr_hospital.menu_doctor" name="Doctors" parent="hr_hospital.menu_root" action="hr_hospital.action_doctor" sequence="30"/>
-        <menuitem id="hr_hospital.menu_disease" name="Diseases" parent="hr_hospital.menu_root" action="hr_hospital.action_disease" sequence="40"/>
-        <menuitem id="hr_hospital.menu_visit" name="Visits" parent="hr_hospital.menu_root" action="hr_hospital.action_visit" sequence="50"/>
-        <menuitem id="hr_hospital.menu_diagnosis" name="Diagnoses" parent="hr_hospital.menu_root" action="hr_hospital.action_diagnosis" sequence="60"/>
-        <menuitem id="hr_hospital.menu_specialization" name="Specializations" parent="hr_hospital.menu_root" action="hr_hospital.action_specialization" sequence="70"/>
-    </data>
-</odoo>
+    <!-- Root menu item -->
+    <menuitem id="hr_hospital_menu_root" name="Hospital"/>
 
+    <!-- Menu items -->
+    <menuitem id="hr_hospital_menu_patients" name="Patients" parent="hr_hospital_menu_root" action="action_patient"/>
+    <menuitem id="hr_hospital_menu_doctors" name="Doctors" parent="hr_hospital_menu_root" action="action_doctor"/>
+    <menuitem id="hr_hospital_menu_diseases" name="Diseases" parent="hr_hospital_menu_root" action="action_disease"/>
+    <menuitem id="hr_hospital_menu_diagnoses" name="Diagnoses" parent="hr_hospital_menu_root" action="action_diagnosis"/>
+    <menuitem id="hr_hospital_menu_visits" name="Visits" parent="hr_hospital_menu_root" action="action_visit"/>
+    <menuitem id="hr_hospital_menu_specializations" name="Specializations" parent="hr_hospital_menu_root" action="action_specialization"/>
+
+
+    <!-- Action definition for doctor list view -->
+    <record id="action_doctor" model="ir.actions.act_window">
+        <field name="name">Doctors</field>
+        <field name="res_model">hr_hospital.doctor</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_doctor_tree"/>
+    </record>
+
+    <!-- Action definition for patient list view -->
+    <record id="action_patient" model="ir.actions.act_window">
+        <field name="name">Patients</field>
+        <field name="res_model">hr_hospital.patient</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_patient_tree"/>
+    </record>
+
+    <!-- Action definition for diagnosis list view -->
+    <record id="action_diagnosis" model="ir.actions.act_window">
+        <field name="name">Diagnoses</field>
+        <field name="res_model">hr_hospital.diagnosis</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_diagnosis_tree"/>
+    </record>
+
+    <!-- Action definition for disease list view -->
+    <record id="action_disease" model="ir.actions.act_window">
+        <field name="name">Diseases</field>
+        <field name="res_model">hr_hospital.disease</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_disease_tree"/>
+    </record>
+
+    <!-- Action definition for visit list view -->
+    <record id="action_visit" model="ir.actions.act_window">
+        <field name="name">Visits</field>
+        <field name="res_model">hr_hospital.visit</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_visit_tree"/>
+    </record>
+
+    <!-- Action definition for specialization list view -->
+    <record id="action_specialization" model="ir.actions.act_window">
+        <field name="name">Specializations</field>
+        <field name="res_model">hr_hospital.specialization</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_specialization_tree"/>
+    </record>
+
+</odoo>

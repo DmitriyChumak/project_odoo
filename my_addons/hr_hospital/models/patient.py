@@ -1,9 +1,5 @@
-# patient model
-
 from odoo import models, fields, api
-from datetime import *
 from . import person
-
 
 class Patient(models.Model):
     _name = 'hr_hospital.patient'
@@ -11,24 +7,17 @@ class Patient(models.Model):
     _description = 'Patient'
 
     personal_doctor_id = fields.Many2one('hr_hospital.doctor', string='Personal Doctor')
-    passport_data = fields.Char(string='Passport Data')
+    supervised_doctor_id = fields.Many2one('hr_hospital.doctor', string='Supervised Doctor')
+    disease_ids = fields.Many2many('hr_hospital.disease', string='Diseases')
+    visit_ids = fields.One2many('hr_hospital.visit', 'patient_id', string='Visits')
+    passport_info = fields.Char(string='Passport Information')
     contact_person = fields.Char(string='Contact Person')
-
-    def name_get(self):
-        result = []
-        for rec in self:
-            name = f"{rec.last_name} {rec.first_name}"
-            result.append((rec.id, name))
-        return result
-
-    @api.depends('date_of_birth')
-    def _compute_age(self):
-        for rec in self:
-            today = date.today()
-            if rec.date_of_birth:
-                rec.age = today.year - rec.date_of_birth.year - (
-                            (today.month, today.day) < (rec.date_of_birth.month, rec.date_of_birth.day))
-            else:
-                rec.age = 0
-
     age = fields.Integer(string='Age', compute='_compute_age', store=True)
+
+    @api.depends('birthdate')
+    def _compute_age(self):
+        for record in self:
+            if record.birthdate:
+                record.age = (fields.Date.today() - record.birthdate).days // 365
+            else:
+                record.age = 0

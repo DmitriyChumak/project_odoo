@@ -1,25 +1,22 @@
-from odoo import models, fields, api
-from datetime import datetime, timedelta
+from odoo import models, fields
+
 
 class DiseaseReportWizard(models.TransientModel):
     _name = 'hr_hospital.disease.report.wizard'
     _description = 'Disease Report Wizard'
 
+    start_date = fields.Date(string='Start Date', required=True)
+    end_date = fields.Date(string='End Date', required=True)
     doctor_ids = fields.Many2many('hr_hospital.doctor', string='Doctors')
     disease_ids = fields.Many2many('hr_hospital.disease', string='Diseases')
-    date_from = fields.Date(string='From', required=True, default=(datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d'))
-    date_to = fields.Date(string='To', required=True, default=datetime.now().strftime('%Y-%m-%d'))
 
-    def action_generate_report(self):
-        domain = [('date', '>=', self.date_from), ('date', '<=', self.date_to)]
+    def generate_report(self):
+        domain = [('visit_id.planned_date_time', '>=', self.start_date),
+                  ('visit_id.planned_date_time', '<=', self.end_date)]
         if self.doctor_ids:
-            domain.append(('doctor_id', 'in', self.doctor_ids.ids))
+            domain.append(('visit_id.doctor_id', 'in', self.doctor_ids.ids))
+        if self.disease_ids:
+            domain.append(('disease_id', 'in', self.disease_ids.ids))
+
         diagnoses = self.env['hr_hospital.diagnosis'].search(domain)
-        return {
-            'type': 'ir.actions.act_window',
-            'name': 'Disease Report',
-            'res_model': 'hr_hospital.diagnosis',
-            'view_mode': 'tree',
-            'domain': [('id', 'in', diagnoses.ids)],
-            'context': {'group_by': ['disease_id']},
-        }
+        # Code to generate report from diagnoses

@@ -1,32 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="hr_hospital_specialization_view_form" model="ir.ui.view">
-        <field name="name">hr_hospital.specialization.form</field>
-        <field name="model">hr_hospital.specialization</field>
-        <field name="arch" type="xml">
-            <form string="Specialization">
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
-
-    <record id="hr_hospital_specialization_view_tree" model="ir.ui.view">
-        <field name="name">hr_hospital.specialization.tree</field>
+    <record id="view_specialization_tree" model="ir.ui.view">
+        <field name="name">specialization.tree</field>
         <field name="model">hr_hospital.specialization</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="description"/>
             </tree>
         </field>
     </record>
 
-    <record id="hr_hospital.action_specialization" model="ir.actions.act_window">
-        <field name="name">Specializations</field>
-        <field name="res_model">hr_hospital.specialization</field>
-        <field name="view_mode">tree,form</field>
+    <record id="view_specialization_form" model="ir.ui.view">
+        <field name="name">specialization.form</field>
+        <field name="model">hr_hospital.specialization</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
     </record>
 </odoo>

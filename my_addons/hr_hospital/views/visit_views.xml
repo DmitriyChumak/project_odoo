@@ -1,38 +1,32 @@
-
 <odoo>
-
-    <record id="hr_hospital.action_visit" model="ir.actions.act_window">
-        <field name="name">Visits</field>
-        <field name="res_model">hr_hospital.visit</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <record id="hr_hospital_visit_view_tree" model="ir.ui.view">
-        <field name="name">hr_hospital.visit.tree</field>
+    <record id="view_visit_tree" model="ir.ui.view">
+        <field name="name">visit.tree</field>
         <field name="model">hr_hospital.visit</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="patient_id" widget="many2one_list"/>
-                <field name="doctor_id" widget="many2one_list"/>
+                <field name="patient_id"/>
+                <field name="doctor_id"/>
+                <field name="planned_date_time"/>
+                <field name="diagnosis_ids"/>
             </tree>
         </field>
     </record>
 
-    <record id="hr_hospital_visit_view_form" model="ir.ui.view">
-        <field name="name">hr_hospital.visit.form</field>
+    <record id="view_visit_form" model="ir.ui.view">
+        <field name="name">visit.form</field>
         <field name="model">hr_hospital.visit</field>
         <field name="arch" type="xml">
-            <form string="Visit">
+            <form>
                 <sheet>
                     <group>
-                        <field name="patient_id" widget="many2one_list"/>
-                        <field name="doctor_id" widget="many2one_list"/>
-                        <field name="symptoms"/>
+                        <field name="patient_id"/>
+                        <field name="doctor_id"/>
+                        <field name="planned_date_time"/>
+                        <field name="diagnosis_ids"/>
                         <field name="notes"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
-
 </odoo>
