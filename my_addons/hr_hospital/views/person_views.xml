@@ -1,0 +1,32 @@
+<odoo>
+    <record id="hr_hospital_person_view_form" model="ir.ui.view">
+        <field name="name">hr_hospital.person.form</field>
+        <field name="model">hr_hospital.person</field>
+        <field name="arch" type="xml">
+            <form string="Person">
+                <sheet>
+                    <group>
+                        <field name="last_name"/>
+                        <field name="first_name"/>
+                        <field name="phone"/>
+                        <field name="photo"/>
+                        <field name="gender"/>
+                        <field name="date_of_birth"/>
+                        <field name="address"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_hospital_person_view_tree" model="ir.ui.view">
+        <field name="name">hr_hospital.person.tree</field>
+        <field name="model">hr_hospital.person</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="last_name"/>
+                <field name="first_name"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

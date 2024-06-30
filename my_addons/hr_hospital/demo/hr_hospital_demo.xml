@@ -1,75 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="doctor_ivanov" model="hr_hospital.doctor">
-            <field name="name">Іванов Іван Іванович</field>
-            <field name="specialization">Терапевт</field>
-            <field name="phone">+380951234567</field>
-            <field name="email">ivanov@example.com</field>
-        </record>
-        <record id="doctor_petrov" model="hr_hospital.doctor">
-            <field name="name">Петров Петро Петрович</field>
-            <field name="specialization">Хірург</field>
-            <field name="phone">+380967654321</field>
-            <field name="email">petrov@example.com</field>
-        </record>
-        <record id="doctor_sidorov" model="hr_hospital.doctor">
-            <field name="name">Сидоров Сидір Сидорович</field>
-            <field name="specialization">Кардіолог</field>
-            <field name="phone">+380979876543</field>
-            <field name="email">sidorov@example.com</field>
-        </record>
-        <record id="doctor_kozlova" model="hr_hospital.doctor">
-            <field name="name">Козлова Ольга Ігорівна</field>
-            <field name="specialization">Педіатр</field>
-            <field name="phone">+380661122334</field>
-            <field name="email">kozlova@example.com</field>
-        </record>
-        <record id="doctor_morozov" model="hr_hospital.doctor">
-            <field name="name">Морозов Дмитро Олегович</field>
-            <field name="specialization">Невролог</field>
-            <field name="phone">+380735566778</field>
-            <field name="email">morozov@example.com</field>
-        </record>
-
-        <record id="patient_smith" model="hr_hospital.patient">
-            <field name="name">John Smith</field>
-            <field name="date_of_birth">1985-05-15</field>
+        <record id="doctor_house" model="hr_hospital.doctor">
+            <field name="last_name">House</field>
+            <field name="first_name">Gregory</field>
+            <field name="date_of_birth">1959-06-11</field>
+            <field name="address">Princeton-Plainsboro Teaching Hospital</field>
+            <field name="specialization">Диагностика</field>
+            <field name="phone">+1-609-555-1212</field>
+            <field name="email">ghouse@ppth.org</field>
             <field name="gender">male</field>
-            <field name="phone">+1234567890</field>
-            <field name="email">john.smith@example.com</field>
-            <field name="address">123 Main St, Anytown, USA</field>
         </record>
-        <record id="patient_johnson" model="hr_hospital.patient">
-            <field name="name">Emily Johnson</field>
-            <field name="date_of_birth">1992-08-22</field>
+        <record id="doctor_wilson" model="hr_hospital.doctor">
+            <field name="last_name">Wilson</field>
+            <field name="first_name">James</field>
+            <field name="date_of_birth">1961-03-22</field>
+            <field name="address">Princeton-Plainsboro Teaching Hospital</field>
+            <field name="specialization">Онколог</field>
+            <field name="phone">+1-609-555-1213</field>
+            <field name="email">jwilson@ppth.org</field>
+            <field name="gender">male</field>
+        </record>
+        <record id="doctor_cuddy" model="hr_hospital.doctor">
+            <field name="last_name">Cuddy</field>
+            <field name="first_name">Lisa</field>
+            <field name="date_of_birth">1965-07-18</field>
+            <field name="address">Princeton-Plainsboro Teaching Hospital</field>
+            <field name="specialization">Декан</field>
+            <field name="phone">+1-609-555-1214</field>
+            <field name="email">lcuddy@ppth.org</field>
             <field name="gender">female</field>
-            <field name="phone">+9876543210</field>
-            <field name="email">emily.johnson@example.com</field>
-            <field name="address">456 Elm St, Anytown, USA</field>
         </record>
-        <record id="patient_williams" model="hr_hospital.patient">
-            <field name="name">Michael Williams</field>
-            <field name="date_of_birth">1978-11-03</field>
+        <record id="doctor_foreman" model="hr_hospital.doctor"> <field name="last_name">Foreman</field>
+            <field name="first_name">Eric</field>
+            <field name="date_of_birth">1976-09-05</field>
+            <field name="address">Princeton-Plainsboro Teaching Hospital</field>
+            <field name="specialization">Невролог</field>
+            <field name="phone">+1-609-555-1215</field>
+            <field name="email">eforeman@ppth.org</field>
             <field name="gender">male</field>
-            <field name="phone">+55512121212</field>
-            <field name="email">michael.williams@example.com</field>
-            <field name="address">789 Oak St, Anytown, USA</field>
         </record>
-        <record id="patient_brown" model="hr_hospital.patient">
-            <field name="name">Olivia Brown</field>
-            <field name="date_of_birth">2000-03-10</field><field name="gender">female</field>
-            <field name="phone">+7778889990</field>
-            <field name="email">olivia.brown@example.com</field>
-            <field name="address">101 Pine St, Anytown, USA</field>
+        <record id="doctor_cameron" model="hr_hospital.doctor">
+            <field name="last_name">Cameron</field>
+            <field name="first_name">Allison</field>
+            <field name="date_of_birth">1978-02-12</field>
+            <field name="address">Princeton-Plainsboro Teaching Hospital</field>
+            <field name="specialization">Імунолог</field>
+            <field name="phone">+1-609-555-1216</field>
+            <field name="email">acameron@ppth.org</field>
+            <field name="gender">female</field>
         </record>
-        <record id="patient_davis" model="hr_hospital.patient">
-            <field name="name">Daniel Davis</field>
-            <field name="date_of_birth">1995-09-30</field>
+        <record id="patient_sheldon" model="hr_hospital.patient">
+            <field name="last_name">Cooper</field>
+            <field name="first_name">Sheldon</field>
+            <field name="date_of_birth">1980-02-26</field>
             <field name="gender">male</field>
-            <field name="phone">+4443332221</field>
-            <field name="email">daniel.davis@example.com</field>
-            <field name="address">202 Cedar St, Anytown, USA</field>
+            <field name="phone">+1-323-555-0104</field>
+            <field name="email">sheldon.cooper@caltech.edu</field>
+            <field name="address">2311 North Los Robles Avenue, Pasadena, CA</field>
+        </record>
+        <record id="patient_leonard" model="hr_hospital.patient">
+            <field name="last_name">Hofstadter</field>
+            <field name="first_name">Leonard</field>
+            <field name="date_of_birth">1980-05-17</field>
+            <field name="gender">male</field>
+            <field name="phone">+1-323-555-0105</field>
+            <field name="email">leonard.hofstadter@caltech.edu</field>
+            <field name="address">2311 North Los Robles Avenue, Pasadena, CA</field>
+        </record>
+        <record id="patient_penny" model="hr_hospital.patient">
+            <field name="last_name">Hofstadter</field>
+            <field name="first_name">Penny</field>
+            <field name="date_of_birth">1985-12-02</field>
+            <field name="gender">female</field>
+            <field name="phone">+1-323-555-0106</field>
+            <field name="email">penny@thecheesecakefactory.com</field>
+            <field name="address">2311 North Los Robles Avenue, Pasadena, CA</field>
+        </record>
+        <record id="patient_howard" model="hr_hospital.patient">
+            <field name="last_name">Wolowitz</field>
+            <field name="first_name">Howard</field>
+            <field name="date_of_birth">1981-03-01</field>
+            <field name="gender">male</field>
+            <field name="phone">+1-323-555-0107</field>
+            <field name="email">howard.wolowitz@caltech.edu</field>
+            <field name="address">Altadena, CA</field>
+        </record>
+        <record id="patient_raj" model="hr_hospital.patient">
+            <field name="last_name">Koothrappali</field>
+            <field name="first_name">Rajesh</field>
+            <field name="date_of_birth">1982-10-06</field>
+            <field name="gender">male</field>
+            <field name="phone">+1-323-555-0108</field>
+            <field name="email">rajesh.koothrappali@caltech.edu</field>
+            <field name="address">Pasadena, CA</field>
         </record>
     </data>
 </odoo>

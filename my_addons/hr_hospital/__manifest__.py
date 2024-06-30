@@ -10,6 +10,7 @@
     'data': [
         'security/ir.model.access.csv',
         'security/security.xml',
+        'views/person_views.xml',
         'views/doctor_views.xml',
         'views/patient_views.xml',
         'views/disease_views.xml',

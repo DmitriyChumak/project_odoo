@@ -12,10 +12,12 @@
         <field name="model">hr_hospital.doctor</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name"/>
-                <field name="specialization"/>
+                <field name="first_name"/>
+                <field name="last_name"/>
+                <field name="date_of_birth"/>
                 <field name="phone"/>
-                <field name="email"/>
+                <field name="address"/>
+                <field name="specialization"/>
             </tree>
         </field>
     </record>
@@ -27,10 +29,12 @@
             <form string="Doctor">
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="specialization"/>
+                        <field name="first_name"/>
+                        <field name="last_name"/>
+                        <field name="date_of_birth"/>
                         <field name="phone"/>
-                        <field name="email"/>
+                        <field name="address"/>
+                        <field name="specialization"/>
                     </group>
                 </sheet>
             </form>

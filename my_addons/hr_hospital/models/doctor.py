@@ -1,16 +1,19 @@
 # doctor model
 
 from odoo import models, fields
+from . import person
 
 class Doctor(models.Model):
     _name = 'hr_hospital.doctor'
+    _inherit = 'hr_hospital.person'
     _description = 'Doctor'
 
-    name = fields.Char(string='Name', required=True)
     specialization = fields.Char(string='Specialization')
-    phone = fields.Char(string='Phone')
-    email = fields.Char(string='Email')
-    gender = fields.Selection([
-        ('male', 'Male'),
-        ('female', 'Female'),
-    ], string='Gender')
+
+    def name_get(self):
+        result = []
+        for rec in self:
+            name = f"{rec.last_name} {rec.first_name}"
+            result.append((rec.id, name))
+        return result
+
